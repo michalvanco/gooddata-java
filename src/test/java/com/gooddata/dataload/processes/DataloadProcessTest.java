@@ -28,7 +28,7 @@ public class DataloadProcessTest {
 
     @Test
     public void testSerialization() {
-        final DataloadProcess process = new DataloadProcess("testProcess", "GROOVY");
+        final DataloadProcess process = new DataloadProcess("testProcess", "GROOVY", "/uploads/process.zip");
         assertThat(process, serializesToJson("/dataload/processes/process-input.json"));
     }
 }

@@ -50,7 +50,12 @@ public class DataStoreService {
         return prefixer;
     }
 
-    private URI getUri(String uri) {
+    /**
+     * TODO
+     * @param uri
+     * @return
+     */
+    public URI getUri(String uri) {
         return getPrefixer().mergeUris(uri);
     }
 
